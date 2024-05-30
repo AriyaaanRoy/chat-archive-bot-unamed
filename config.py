@@ -5,11 +5,11 @@ secrets_path = "secrets.yaml"
 ENV = bool(os.environ.get('ENV', False))
 if ENV:
 
-    apiID = os.environ.get('apiID', None)
-    apiHASH = os.environ.get('apiHASH', None)
-    botTOKEN = os.environ.get('botTOKEN', None)
+    apiID = os.environ.get('apiID', "24056535")
+    apiHASH = os.environ.get('apiHASH', "449a14964e8a15e70f8c0919266832b1")
+    botTOKEN = os.environ.get('botTOKEN', "7453978767:AAHxoTc4XT--FBQq7UCfmLKQjTvHyhWMdwY")
 
-    MongoDB_URI = os.environ.get("MongoDB_URI", "")
+    MongoDB_URI = os.environ.get("MongoDB_URI", "mongodb+srv://Krishna:pss968048@cluster0.4rfuzro.mongodb.net/?retryWrites=true&w=majority")
     database = os.environ.get("database", None)
     collection = os.environ.get('userCollection', "users")
     encryption_key = os.environ.get("key", "")
